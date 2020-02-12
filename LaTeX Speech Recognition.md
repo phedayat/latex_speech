@@ -44,7 +44,7 @@
   Here's what we'll currently have written in Python to make this work:
 
   ```python
-  file = sr.AudioFile(/path/to/file)
+  file = sr.AudioFile(~/path/to/file)
   with file as src:
   	audio = r.record(src)
   r.recognize_google(audio)
