@@ -18,11 +18,11 @@
   * It's meant to recognize the speech ==(this is obvious and probably an unnecessary point)==
   * Each `Recognizer` instance comes with settings and functionality for recognizing speech from an audio source
   * Initialize like so: `r = sr.Recognizer()`
-  * `Recognizer` comes with seven methods for recognizing speech. The article we're reading uses the [Google Web Speech API](https://wicg.github.io/speech-api/), so we're going to be referring to that in this document. 
+  * `Recognizer` comes with seven methods for recognizing speech. The article we're reading uses the [Google Web Speech API](https://wicg.github.io/speech-api/), so we're going to be referring to that in this document.
 
 ### Google Web Speech
 
-* As mentioned before, we'll be using the Google Web Speech API to begin this project. We begin by calling `r.recognize_google()`, which calls the Web Speech API. From this, we get an error that says we're missing an argument `audio_data`. `audio_data` is the audio file the function is supposed to interpret speech from.
+* As mentioned before, we'll be using the Google Web Speech API to begin this project. We begin by calling `r.recognize_google()`, which calls the Web Speech API. From this, we get an error that says we're missing an argument `audio_data`. `audio_data` is the audio file the function is supposed to interpret speech from.
 
 ### Audio Files
 
@@ -49,7 +49,7 @@
   	audio = r.record(src)
   r.recognize_google(audio)
   ```
-  * Note: `with expression as variable ` is a with block. It's a control flow structure that clarifies code that would use a `try...finally` block.
+  * Note: `with expression as variable `  is a with block. It's a control flow structure that clarifies code that would use a `try...finally` block.
 
 * Now that we're able to transcribe speech, we can now look at other features. With `record()`, we can capture segments of audio with an offset and a set duration of the audio file. `record()` has two optional parameters: `offset` and `duration`.
 
