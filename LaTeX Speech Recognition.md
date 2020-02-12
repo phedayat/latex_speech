@@ -49,7 +49,7 @@
   	audio = r.record(src)
   r.recognize_google(audio)
   ```
-  * Note: `with expression as variable `  is a with block. It's a control flow structure that clarifies code that would use a `try...finally` block.
+  * Note: `with expression as variable`  is a with block. It's a control flow structure that clarifies code that would use a `try...finally` block.
 
 * Now that we're able to transcribe speech, we can now look at other features. With `record()`, we can capture segments of audio with an offset and a set duration of the audio file. `record()` has two optional parameters: `offset` and `duration`.
 
