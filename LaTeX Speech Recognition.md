@@ -60,4 +60,18 @@
     audio = r.record(src, duration=10)
   ````
 
+  Something to note is that within the `with` block, if you call `r.record()` twice, with specific durations, the second call will begin recording where the first call left off.
   
+  To begin recording at a specific point, we can call:
+  
+  ```python
+  with file as src:
+  	audio = r.record(src, offset=10)
+  ```
+  
+  Thus we'd start recording 10 seconds into the audio file. 
+
+### Noise
+
+* Every audio file is going to contain some degree of noise. It's unavoidable unless someone is recording the audio in a studio.
+* We can use `adjust_for_ambient_noise()`
