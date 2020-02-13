@@ -1,5 +1,7 @@
 # LaTeX Speech Recognition
 
+---
+
 ## General Information
 
 * Language: Python
@@ -7,6 +9,14 @@
     * SpeechRecognition
     * (Possibly) PyAudio
 * Article we're reading to begin learning for this project: [Python Speech Recognition](https://realpython.com/python-speech-recognition/)
+
+---
+
+## Ideas for later
+
+* Regular expressions?
+
+---
 
 ## Beginning (Pick a better name later)
 
